@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Open+Sans&display=swap');
+
+body{
+    background-color: #ffffff;
+}
+
+.main{
+    width: 85%;
+    border-radius: 40px;
+    margin: 50px auto;
+    padding: 50px;
+    display: flex;
+    gap: 15%;
+    font-family: "Open Sans", sans-serif;
+    -webkit-box-shadow:0px 0px 118px 51px rgba(5,50,252,0.61);
+    -moz-box-shadow: 0px 0px 118px 51px rgba(5,50,252,0.61);
+    box-shadow: 0px 0px 118px 51px rgba(5,50,252,0.61);
+}
+
+#createAccount{
+    border: 5px solid #ffffff;
+    width:25%;
+    color: white;
+    border-radius: 30px;
+    padding: 20px 60px 25px;
+    background-color: #002657;
+    -webkit-box-shadow:0px 0px 300px 10px rgba(70,89,171,1);
+    -moz-box-shadow: 0px 0px 300px 10px rgba(70,89,171,1);
+    box-shadow: 0px 0px 300px 10px rgba(70,89,171,1);
+    >h3:first-child{
+        font-size: 40px;
+        text-align: center;
+        margin: 0PX 6PX;
+    }
+    >input[type=number],input[type=text]{
+        border-radius:8px;
+        padding: 4px 20px;
+        width: 90%;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        aspect-ratio:76/9;
+        border: 2px solid #ffffff;
+        background-color:  #00377e;
+    }
+    >input[type=number]:hover,input[type=text]:hover{
+        border: 2px solid #000000;
+        background-color:  #04479f;
+    }
+    >input[type=radio]{
+        margin-left: 10px;
+        width: 10%;
+    }
+    >input[type=radio]:checked + label{
+        font-size: x-large;
+        margin-bottom: 7PX;
+        transition: all 1s ease-in-out;
+    }
+    #createBtn{
+        border-radius:80px 20px /30px 30px ;
+        font-size: x-large;
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        color: #422800;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 0 18px;
+        line-height: 50px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        -webkit-box-shadow:0px 0px 226px 26px ;
+        -moz-box-shadow: 0px 0px 226px 26px rgba(102,84,201,1);
+        box-shadow: 0px 0px 226px 26px rgba(102,84,201,1);
+    }
+    #createBtn:hover{
+        scale: 1.2;
+        transform: rotate(-2deg);
+        border-radius:30px 30px /80px 20px ;
+        transition: all 0.6s ease-out;
+        color: #04479f;
+        background-color: #ffffff;
+        -webkit-box-shadow:0px 0px 226px 17px rgba(102,84,201,1);
+        -moz-box-shadow: 0px 0px 226px 17px rgba(102,84,201,1);
+        box-shadow: 0px 0px 226px 17px rgba(102,84,201,1);
+    }
+    #createBtn:active{
+        transition:all 0.1s ease;
+        box-shadow: #04479f 2px 2px 0 0;
+        transform: rotate(-2deg) translate(3px, 3px);
+    }
+}
+
+.btn{
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+}
+
+#details{
+    width: 40%;
+    border: 5px solid #ffffff;
+    color: white;
+    border-radius: 30px;
+    padding: 0px 60px;
+    -webkit-box-shadow:0px 0px 300px 51px rgba(70,89,171,1);
+    -moz-box-shadow: 0px 0px 300px 51px rgba(70,89,171,1);
+    box-shadow: 0px 0px 300px 51px rgba(70,89,171,1);
+    >h1{
+        text-align: center;
+        font-size: 60px;
+        color: #002657;
+    }
+    .info{
+        border: 5px solid #ffffff;
+        border-radius: 30px;
+        background-color: #002657;
+        padding-bottom: 20px;
+        -webkit-box-shadow:0px 0px 300px 2px rgba(70,89,171,1);
+        -moz-box-shadow: 0px 0px 300px 2px rgba(70,89,171,1);
+        box-shadow: 0px 0px 300px 2px rgba(70,89,171,1);
+        >h3{
+            text-align: center;
+            font-size: x-large;
+            font-family: 'Nova Square', sans-serif;
+        }
+    }
+    .flexbox{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0px 40px;
+        font-size: 20px;
+    }
+    >.balancebox{
+        display: flex;
+        text-shadow: 0px 0px 40px #ffffff;
+        color: #04479f;
+        padding:0px 10px;
+        font-family: 'Nova Square', sans-serif;
+    }
+    >.btn > #serviceBtn{
+        padding: 15px 80px;
+        border-radius: 80px 40px;
+        transition: all 0.5s ease-in-out;
+        background-color: #00377e;
+    }
+    >.btn >#serviceBtn > button{
+        font-family: "Open Sans" ,sans-serif;
+        color: #ffffff;
+        font-size:x-large;
+        background-color: #00377e;
+        border: none;
+    }
+    >.btn > #serviceBtn:hover{
+        scale: 1.2;
+        -webkit-box-shadow:0px 0px 220px 8px rgba(0,74,245,1);
+        -moz-box-shadow: 0px 0px 220px 8px rgba(0,74,245,1);
+        box-shadow: 0px 0px 220px 8px rgba(0,74,245,1);
+        border: 5px solid #ffffff;
+    }
+    >.btn > #serviceBtn:active{
+        transition: all 0.3s ease-in-out;
+        box-shadow: #04479f 2px 2px 0 0;
+        transform: translate(3px, 3px);
+    }
+}
